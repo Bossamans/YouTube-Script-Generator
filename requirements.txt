@@ -1,0 +1,15 @@
+# --- Core runtime dependencies -------------------------------------------
+# Modern Qt 6 bindings for Python — powers the entire GUI layer.
+PyQt6>=6.6.0,<7.0.0
+
+# Official OpenAI Python SDK (v1+). Used for GPT-4 script generation.
+# The app falls back to an offline placeholder if this package is missing
+# or if OPENAI_API_KEY is not set, but it is required for real generation.
+openai>=1.12.0,<2.0.0
+
+# --- Optional helpers (uncomment to enable) ------------------------------
+# Loads environment variables from a local .env file (useful for API keys).
+# python-dotenv>=1.0.0,<2.0.0
+
+# Richer Markdown rendering if you extend the output pipeline.
+# markdown>=3.5,<4.0
